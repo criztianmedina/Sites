@@ -1,0 +1,189 @@
+<!-- res/layout/activity_contacto.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/fondo">
+
+
+    <ImageView
+        android:id="@+id/imageViewPerfil"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewPerfil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Titulo del lugar"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/botonesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitulo"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Botones -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="SMS"
+            android:drawableLeft="@drawable/mensaje"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Llamar"
+            android:drawableLeft="@drawable/llamar"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Correo"
+            android:drawableLeft="@drawable/correo"/>
+
+        <ImageButton
+            android:id="@+id/btnEliminar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/eliminar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewNombre0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/botonesLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/categorias"
+        android:text="  Categoria: "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewNombre0"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewTelefono0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNombre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/telefono"
+        android:text="  Telefono: "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewTelefono0"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/textViewDescripcion0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTelefono"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/descripcion"
+        android:text="  Descripcion: "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDescripcion0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewUbicacion0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDescripcion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ubicacion"
+        android:text="  Ubicacion: "
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/textViewLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUbicacion0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Latitud: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLatitud"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Longitud: "
+        android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCompartirContacto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewLongitud"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/compartir"
+            android:text="Compartir Sitio" />
+
+        <Button
+            android:id="@+id/btnVerUbicacion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnCompartirContacto"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ubicacion24"
+            android:text="Ver Ubicacion " />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

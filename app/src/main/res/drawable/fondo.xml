@@ -1,0 +1,7 @@
+<!-- res/drawable/degradado_verde_blanco.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="#545554"
+        android:endColor="#FFFFFF"
+        android:angle="90"/>
+</shape>
